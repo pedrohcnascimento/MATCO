@@ -19,7 +19,7 @@
 7. [ATRIBUTOS DAS CLASSES](#7-atributos-das-classes)
 8. [MÉTODOS DAS CLASSES](#8-métodos-das-classes)
 9. [RELACIONAMENTO ENTRE CLASSES](#9-relacionamento-entre-classes)
-10. [DIAGRAMA DE CLASSES (TEXTUAL)](#10-diagrama-de-classes-textual)
+10. [DIAGRAMA DE CLASSES](#10-diagrama-de-classes)
 11. [EXEMPLO DE EXECUÇÃO DO SISTEMA](#11-exemplo-de-execução-do-sistema)
 12. [CONCLUSÃO](#12-conclusão)
 
@@ -81,6 +81,113 @@ Representa uma notificação de segurança emitida pelo sistema.
 
 ### 6.5. Classe PlanoDeVoo
 Define a trajetória e os parâmetros de uma missão aérea.
+
+---
+
+## 10. DIAGRAMA DE CLASSES
+
+![Diagrama de Classes](diagrama_classes.png)
+
+```mermaid
+classDiagram
+
+class Aeronave {
+    -int id
+    -String nome
+    -double velocidade
+    -double altitude
+    -String status
+    -double autonomiaCombustivel
+    -String localizacao
+
+    +decolar()
+    +pousar()
+    +atualizarLocalizacao(Ponto novaLocalizacao)
+    +recalcularRota(PlanoDeVoo novoPlano)
+    +verificarCombustivel()
+}
+
+class Drone {
+    -int id
+    -String modelo
+    -double nivelBateria
+    -String status
+    -double capacidadeCarga
+    -String localizacao
+
+    +iniciarMissao(Ponto destino)
+    +retornarBase()
+    +verificarBateria()
+    +atualizarStatus(String novoStatus)
+}
+
+class EventoClimatico {
+    -int id
+    -String tipo
+    -String intensidade
+    -String areaAfetada
+    -Date dataHoraInicio
+    -Date dataHoraFimPrevista
+    -int nivelRisco
+
+    +detectarTempestade()
+    +atualizarIntensidade(String novaIntensidade)
+    +preverFim(Date novaPrevisao)
+}
+
+class Alerta {
+    -int id
+    -String tipo
+    -String mensagem
+    -Date dataHoraEmissao
+    -String localizacaoAfetada
+    -String urgencia
+
+    +emitirAlerta(String tipo, String mensagem, Localizacao local)
+    +visualizarDetalhes()
+    +marcarComoLido()
+}
+
+class PlanoDeVoo {
+    -int id
+    -String origem
+    -String destino
+    -List~Ponto~ rota
+    -Date horaPartidaPrevista
+    -Date horaChegadaPrevista
+    -String status
+
+    +calcularRotaSegura(Ponto origem, Ponto destino, EventoClimatico evento)
+    +validarRota()
+    +atualizarStatus(String novoStatus)
+}
+
+class TorreControle {
+    -int id
+    -String nome
+    -String localizacao
+    -List~Aeronave~ aeronavesGerenciadas
+    -List~Drone~ dronesGerenciados
+    -List~Alerta~ alertasAtivos
+
+    +gerenciarAeronave(Aeronave aeronave)
+    +gerenciarDrone(Drone drone)
+    +monitorarClima(EventoClimatico evento)
+    +coordenarPlanoDeVoo(PlanoDeVoo plano)
+    +receberAlerta(Alerta alerta)
+}
+
+Aeronave "1" --> "1" PlanoDeVoo : possui
+Drone "1" --> "1" PlanoDeVoo : possui
+
+EventoClimatico "1" --> "*" Alerta : gera
+
+TorreControle "1" --> "*" Aeronave : gerencia
+TorreControle "1" --> "*" Drone : gerencia
+TorreControle "1" --> "*" Alerta : recebe
+TorreControle "1" --> "*" PlanoDeVoo : coordena
+TorreControle ..> EventoClimatico : monitora
+```
 
 ---
 
