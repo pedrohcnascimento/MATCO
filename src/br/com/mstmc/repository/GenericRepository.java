@@ -1,4 +1,4 @@
-package br.com.matco.repository;
+package br.com.mstmc.repository;
 
 import java.util.ArrayList;
 import java.util.List;

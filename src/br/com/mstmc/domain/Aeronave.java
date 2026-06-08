@@ -1,10 +1,9 @@
-package br.com.matco.domain;
+package br.com.mstmc.domain;
 
-public class Drone {
+public class Aeronave {
     private String id;
     private String modelo;
     private String status;
-    private String localizacao;
 
     public String getId() {
         return id;
@@ -28,13 +27,5 @@ public class Drone {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public String getLocalizacao() {
-        return localizacao;
-    }
-
-    public void setLocalizacao(String localizacao) {
-        this.localizacao = localizacao;
     }
 }

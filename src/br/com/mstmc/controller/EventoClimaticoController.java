@@ -1,7 +1,7 @@
-package br.com.matco.controller;
+package br.com.mstmc.controller;
 
-import br.com.matco.domain.EventoClimatico;
-import br.com.matco.service.EventoClimaticoService;
+import br.com.mstmc.domain.EventoClimatico;
+import br.com.mstmc.service.EventoClimaticoService;
 
 import java.util.List;
 

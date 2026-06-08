@@ -1,4 +1,4 @@
-package br.com.matco.domain;
+package br.com.mstmc.domain;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package br.com.matco.interfaces;
+package br.com.mstmc.interfaces;
 
 public class Texts {
-    public static final String WELCOME = "\nBem-vindo ao Sistema MARS AIR TRAFFIC & CLIMATE OPS (MATCO)!\n";
+    public static final String WELCOME = "\nBem-vindo ao Sistema MARS AIR TRAFFIC & CLIMATE OPS (Mars Spacial Traffic & Mission Control)!\n";
     public static final String MAIN_MENU_TITLE = "\n--- MENU PRINCIPAL ---";
     public static final String OPTION_AERONAVE = "1. Gerenciar Aeronaves";
     public static final String OPTION_EVENTO_CLIMATICO = "2. Gerenciar Eventos Climáticos";
@@ -10,7 +10,7 @@ public class Texts {
     public static final String OPTION_PLANO_DE_VOO = "5. Gerenciar Planos de Voo";
     public static final String OPTION_EXIT = "0. Sair";
     public static final String INVALID_OPTION = "Opção inválida. Tente novamente.";
-    public static final String EXIT_MESSAGE = "Saindo do sistema MATCO. Até logo!";
+    public static final String EXIT_MESSAGE = "Saindo do sistema Mars Spacial Traffic & Mission Control. Até logo!";
 
     // Aeronave Menu
     public static final String AERONAVE_MENU_TITLE = "\n--- MENU DE AERONAVES ---";

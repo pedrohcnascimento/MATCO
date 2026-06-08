@@ -1,10 +1,11 @@
-package br.com.matco.domain;
+package br.com.mstmc.domain;
 
-public class Alerta {
+public class EventoClimatico {
     private String id;
     private String tipo;
-    private String mensagem;
+    private String intensidade;
     private String localizacao;
+    private boolean detectado;
 
     public String getId() {
         return id;
@@ -22,12 +23,12 @@ public class Alerta {
         this.tipo = tipo;
     }
 
-    public String getMensagem() {
-        return mensagem;
+    public String getIntensidade() {
+        return intensidade;
     }
 
-    public void setMensagem(String mensagem) {
-        this.mensagem = mensagem;
+    public void setIntensidade(String intensidade) {
+        this.intensidade = intensidade;
     }
 
     public String getLocalizacao() {
@@ -36,5 +37,13 @@ public class Alerta {
 
     public void setLocalizacao(String localizacao) {
         this.localizacao = localizacao;
+    }
+
+    public boolean isDetectado() {
+        return detectado;
+    }
+
+    public void setDetectado(boolean detectado) {
+        this.detectado = detectado;
     }
 }

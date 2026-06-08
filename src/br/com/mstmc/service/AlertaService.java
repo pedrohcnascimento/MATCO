@@ -1,7 +1,7 @@
-package br.com.matco.service;
+package br.com.mstmc.service;
 
-import br.com.matco.domain.Alerta;
-import br.com.matco.repository.GenericRepository;
+import br.com.mstmc.domain.Alerta;
+import br.com.mstmc.repository.GenericRepository;
 
 import java.util.List;
 import java.util.UUID;

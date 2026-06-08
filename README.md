@@ -1,12 +1,12 @@
-# MATCO - Mars Air Traffic & Climate Ops
+# Mars Spacial Traffic & Mission Control - Mars Air Traffic & Climate Ops
 
 ## Visão Geral
 
-O **MARS AIR TRAFFIC & CLIMATE OPS (MATCO)** é um sistema simulado de gerenciamento e monitoramento de operações aéreas e climáticas em Marte. Este projeto foi desenvolvido como uma simulação educacional baseada na documentação do sistema MATCO, seguindo a estrutura de projeto do repositório **ChallengeEcopulse**.
+O **MARS AIR TRAFFIC & CLIMATE OPS (Mars Spacial Traffic & Mission Control)** é um sistema simulado de gerenciamento e monitoramento de operações aéreas e climáticas em Marte. Este projeto foi desenvolvido como uma simulação educacional baseada na documentação do sistema Mars Spacial Traffic & Mission Control, seguindo a estrutura de projeto do repositório **ChallengeEcopulse**.
 
 ## Objetivo
 
-O MATCO visa simular um sistema integrado que:
+O Mars Spacial Traffic & Mission Control visa simular um sistema integrado que:
 
 - **Monitora eventos climáticos** em Marte, especialmente tempestades de poeira
 - **Gerencia aeronaves** e drones para operações aéreas seguras
@@ -17,8 +17,8 @@ O MATCO visa simular um sistema integrado que:
 ## Estrutura do Projeto
 
 ```
-MATCO/
-├── src/br/com/matco/
+Mars Spacial Traffic & Mission Control/
+├── src/br/com/mstmc/
 │   ├── domain/              # Entidades do domínio
 │   │   ├── Aeronave.java
 │   │   ├── EventoClimatico.java
@@ -84,17 +84,17 @@ MATCO/
 ### Compilação
 
 ```bash
-javac -d out src/br/com/matco/domain/*.java
-javac -d out src/br/com/matco/repository/*.java
-javac -d out src/br/com/matco/service/*.java
-javac -d out src/br/com/matco/controller/*.java
-javac -d out -cp out src/br/com/matco/interfaces/*.java
+javac -d out src/br/com/mstmc/domain/*.java
+javac -d out src/br/com/mstmc/repository/*.java
+javac -d out src/br/com/mstmc/service/*.java
+javac -d out src/br/com/mstmc/controller/*.java
+javac -d out -cp out src/br/com/mstmc/interfaces/*.java
 ```
 
 ### Execução
 
 ```bash
-java -cp out br.com.matco.interfaces.Exibition
+java -cp out br.com.mstmc.interfaces.Exibition
 ```
 
 ## Arquitetura
@@ -122,7 +122,7 @@ O projeto segue o padrão **MVC (Model-View-Controller)** com camadas bem defini
 ## Exemplo de Uso
 
 ```
-Bem-vindo ao Sistema MARS AIR TRAFFIC & CLIMATE OPS (MATCO)!
+Bem-vindo ao Sistema MARS AIR TRAFFIC & CLIMATE OPS (Mars Spacial Traffic & Mission Control)!
 
 --- MENU PRINCIPAL ---
 1. Gerenciar Aeronaves
@@ -152,13 +152,13 @@ Aeronave cadastrada com sucesso!
 
 ## Referências
 
-- Documentação MATCO fornecida
+- Documentação Mars Spacial Traffic & Mission Control fornecida
 - Estrutura baseada no projeto ChallengeEcopulse
 - Padrão de arquitetura MVC com camadas
 
 ## Autor
 
-Desenvolvido como simulação educacional do sistema MATCO para Marte.
+Desenvolvido como simulação educacional do sistema Mars Spacial Traffic & Mission Control para Marte.
 
 ---
 

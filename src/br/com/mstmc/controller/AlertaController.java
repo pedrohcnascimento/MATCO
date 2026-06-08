@@ -1,7 +1,7 @@
-package br.com.matco.controller;
+package br.com.mstmc.controller;
 
-import br.com.matco.domain.Alerta;
-import br.com.matco.service.AlertaService;
+import br.com.mstmc.domain.Alerta;
+import br.com.mstmc.service.AlertaService;
 
 import java.util.List;
 

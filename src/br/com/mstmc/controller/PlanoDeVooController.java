@@ -1,7 +1,7 @@
-package br.com.matco.controller;
+package br.com.mstmc.controller;
 
-import br.com.matco.domain.PlanoDeVoo;
-import br.com.matco.service.PlanoDeVooService;
+import br.com.mstmc.domain.PlanoDeVoo;
+import br.com.mstmc.service.PlanoDeVooService;
 
 import java.util.List;
 
