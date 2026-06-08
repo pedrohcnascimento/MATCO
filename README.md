@@ -1,8 +1,8 @@
-# Mars Spacial Traffic & Mission Control - Mars Air Traffic & Climate Ops
+# Mars Spacial Traffic & Mission Control 
 
 ## Visão Geral
 
-O **MARS AIR TRAFFIC & CLIMATE OPS (Mars Spacial Traffic & Mission Control)** é um sistema simulado de gerenciamento e monitoramento de operações aéreas e climáticas em Marte. Este projeto foi desenvolvido como uma simulação educacional baseada na documentação do sistema Mars Spacial Traffic & Mission Control, seguindo a estrutura de projeto do repositório **ChallengeEcopulse**.
+O **Mars Spacial Traffic & Mission Control** é um sistema simulado de gerenciamento e monitoramento de operações aéreas e climáticas em Marte. Este projeto foi desenvolvido como uma simulação educacional baseada na documentação do sistema Mars Spacial Traffic & Mission Control, seguindo a mesma estrutura lógica do repositório do projeto **ChallengeEcopulse**.
 
 ## Objetivo
 
@@ -99,7 +99,7 @@ java -cp out br.com.mstmc.interfaces.Exibition
 
 ## Arquitetura
 
-O projeto segue o padrão **MVC (Model-View-Controller)** com camadas bem definidas:
+O projeto segue o padrão **DDD (Domain Driven Desgin)** com camadas bem definidas:
 
 | Camada | Responsabilidade |
 |--------|------------------|
@@ -154,11 +154,7 @@ Aeronave cadastrada com sucesso!
 
 - Documentação Mars Spacial Traffic & Mission Control fornecida
 - Estrutura baseada no projeto ChallengeEcopulse
-- Padrão de arquitetura MVC com camadas
-
-## Autor
-
-Desenvolvido como simulação educacional do sistema Mars Spacial Traffic & Mission Control para Marte.
+- Padrão de arquitetura DDD com camadas
 
 ---
 
